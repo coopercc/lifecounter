@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Life Counter</string>
+    <string name="_plus5">+5</string>
+    <string name="_plus1">+</string>
+    <string name="_min1">-</string>
+    <string name="_min5">-5</string>
+    <string name="_baseHealth">20</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,10 +8,301 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="lifecounter.coopercc.washington.edu.lifecounter.MainActivity">
+    tools:context="lifecounter.coopercc.washington.edu.lifecounter.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Player 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/p1name"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Health: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1health"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="@string/_baseHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1hp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/_min5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1min5"
+                android:tag="-5"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1min1"
+                android:tag="-1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1plus1"
+                android:tag="1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1plus5"
+                android:tag="5"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Player 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/p2name"
+            android:textSize="20sp"
+            android:paddingTop="5sp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Health: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2health"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="@string/_baseHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2hp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/_min5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2min5"
+                android:tag="-5"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2min1"
+                android:tag="-1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2plus1"
+                android:tag="1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p2plus5"
+                android:tag="5"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Player 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/p3name"
+            android:textSize="20sp"
+            android:paddingTop="5sp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Health: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3health"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="@string/_baseHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3hp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/_min5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3min5"
+                android:tag="-5"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3min1"
+                android:tag="-1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3plus1"
+                android:tag="1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p3plus5"
+                android:tag="5"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Player 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/p4name"
+            android:textSize="20sp"
+            android:paddingTop="5sp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Health: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4health"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="@string/_baseHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4hp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="@string/_min5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4min5"
+                android:tag="-5"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_min1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4min1"
+                android:tag="-1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4plus1"
+                android:tag="1"
+                android:layout_weight="1" />
+            <Button
+                android:text="@string/_plus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p4plus5"
+                android:tag="5"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/loser"
+            android:paddingTop="10sp" />
+
+    </LinearLayout>
+
+</ScrollView>
